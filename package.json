@@ -1,0 +1,9 @@
+{
+  "name": "kessho-wine-landing",
+  "version": "1.0.0",
+  "description": "kes-sho Wine Glasses Landing Page",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  }
+}
