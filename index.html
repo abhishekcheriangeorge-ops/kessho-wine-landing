@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>kes-sho Wine Glasses | Hand-Blown Crystal from S$124</title>
+<meta name="description" content="Hand-blown, lead-free crystal wine glasses from Singapore. Two universal silhouettes. From S$124. Free worldwide shipping.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap">
+<style>
+:root{
+--bg-main:#f8f6f3;--bg-panel:#ffffff;--bg-accent:#f1ebe3;
+--text-main:#14110f;--text-muted:#7a7570;--gold:#c5a572;--gold-text:#9c7a45;
+--border-subtle:rgba(0,0,0,0.06);--serif:'Cormorant Garamond',serif;--sans:'Inter',sans-serif;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg-main);color:var(--text-main);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:80px}
+:focus-visible{outline:2px solid var(--gold-text);outline-offset:3px;border-radius:4px}
+.section-label{font-family:var(--sans);font-size:0.75rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold-text)}
+.section-title{font-family:var(--serif);font-size:2.2rem;font-weight:300;line-height:1.15;margin-top:0.4rem}
+section{padding:3.5rem 2rem;max-width:900px;margin:0 auto}
+.cta{display:inline-block;padding:0.9rem 2.4rem;background:var(--gold);color:#fff;text-decoration:none;text-transform:uppercase;font-size:0.75rem;font-weight:600;letter-spacing:0.2em;border-radius:999px;border:none;cursor:pointer;transition:all .3s;min-height:54px;line-height:54px;line-height:normal;display:inline-flex;align-items:center;justify-content:center}
+.cta:hover{background:var(--bg-panel);color:var(--gold-text);box-shadow:inset 0 0 0 1px var(--gold)}
+.cta:focus-visible{outline:2px solid var(--gold-text);outline-offset:4px}
+.trust-row{display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 0.8rem;margin-top:1.2rem}
+.trust-pill{font-size:0.75rem;color:var(--text-muted);border:1px solid var(--border-subtle);border-radius:999px;padding:0.3rem 0.85rem;background:rgba(0,0,0,0.02)}
+.hero{text-align:center;padding:3.5rem 2rem 2rem;max-width:900px;margin:0 auto}
+.hero h1{font-family:var(--serif);font-size:2.8rem;font-weight:300;line-height:1.1;margin-bottom:0.6rem}
+.hero .highlight{color:var(--gold)}
+.hero-sub{font-size:0.95rem;color:var(--text-muted);max-width:540px;margin:0 auto 1.5rem;line-height:1.7}
+.hero-image-zone{width:100%;max-width:640px;aspect-ratio:4/3;margin:0 auto 2rem;border-radius:18px;overflow:hidden;background:var(--bg-panel);border:1px solid var(--border-subtle)}
+.hero-image-zone img{width:100%;height:100%;object-fit:cover}
+.intro-text{font-size:1rem;color:var(--text-muted);line-height:1.8;max-width:640px;margin-bottom:1.5rem}
+.intro-list{list-style:none;max-width:640px}
+.intro-list li{padding:0.6rem 0;padding-left:1.6rem;position:relative;font-size:0.95rem;color:var(--text-main);line-height:1.6}
+.intro-list li::before{content:'';position:absolute;left:0;top:1rem;width:6px;height:6px;background:var(--gold);border-radius:50%}
+.proof-bar{display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;padding:2rem;background:var(--bg-panel);border-top:1px solid var(--border-subtle);border-bottom:1px solid var(--border-subtle)}
+.proof-item{text-align:center}
+.proof-item .number{font-family:var(--serif);font-size:1.5rem;color:var(--gold-text);font-weight:300}
+.proof-item .label{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-muted);margin-top:0.15rem}
+.shape-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:1.5rem}
+.shape-card{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:18px;padding:1.8rem;cursor:pointer;transition:all .3s;position:relative}
+.shape-card:hover,.shape-card.selected{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+.shape-card .shape-name{font-family:var(--serif);font-size:1.4rem;font-weight:400;margin-bottom:0.3rem}
+.shape-card .shape-tagline{font-size:0.85rem;color:var(--text-muted);margin-bottom:0.6rem}
+.shape-card .shape-desc{font-size:0.85rem;color:var(--text-muted);line-height:1.6;margin-bottom:1rem}
+.shape-card .shape-img{width:100%;border-radius:12px;margin-top:0.8rem;aspect-ratio:4/3;object-fit:cover}
+.shape-pill{display:inline-block;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;border-radius:999px;border:1px solid var(--border-subtle);color:var(--text-muted);margin-bottom:0.8rem}
+.shape-card.selected .shape-pill{background:var(--gold);color:#fff;border-color:var(--gold)}
+.pack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:1.5rem}
+.pack-card{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:18px;padding:1.8rem;text-align:center}
+.pack-card .pack-title{font-family:var(--serif);font-size:1.3rem;font-weight:400;margin-bottom:0.3rem}
+.pack-card .pack-sub{font-size:0.8rem;color:var(--text-muted);margin-bottom:0.8rem}
+.pack-card .pack-price{font-family:var(--serif);font-size:1.8rem;color:var(--text-main);margin-bottom:0.2rem}
+.pack-card .pack-per{font-size:0.75rem;color:var(--text-muted);margin-bottom:1rem}
+.pack-card .micro-testimonial{font-size:0.8rem;color:var(--text-muted);font-style:italic;margin-top:1rem;line-height:1.5}
+.bundle-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:1.5rem}
+.bundle-card{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:18px;padding:1.8rem;text-align:center}
+.bundle-card .bundle-title{font-family:var(--serif);font-size:1.2rem;font-weight:400;margin-bottom:0.3rem}
+.bundle-card .bundle-desc{font-size:0.8rem;color:var(--text-muted);margin-bottom:0.8rem;line-height:1.5}
+.bundle-card .bundle-price{font-family:var(--serif);font-size:1.5rem;color:var(--text-main);margin-bottom:1rem}
+.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin-top:1.5rem}
+.testimonial-card{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:18px;padding:1.5rem}
+.testimonial-card .quote{font-size:0.9rem;line-height:1.7;color:var(--text-main);margin-bottom:0.8rem}
+.testimonial-card .attribution{font-size:0.8rem;color:var(--text-muted);font-style:italic}
+.faq-list{max-width:640px;margin-top:1.5rem}
+.faq-item{border-bottom:1px solid var(--border-subtle);padding:1rem 0}
+.faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:0.95rem;font-weight:500;color:var(--text-main);padding-right:1rem;background:none;border:none;width:100%;text-align:left;font-family:var(--sans);min-height:54px}
+.faq-q .faq-toggle{font-size:1.2rem;color:var(--gold-text);min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center}
+.faq-a{font-size:0.85rem;color:var(--text-muted);line-height:1.7;padding:0.5rem 0 0.5rem;display:none}
+.faq-item.open .faq-a{display:block}
+.faq-item.open .faq-toggle{transform:rotate(45deg)}
+.final-cta{text-align:center;padding:3rem 2rem;background:linear-gradient(to bottom,var(--bg-main),var(--bg-accent))}
+.guarantee{text-align:center;padding:2rem;max-width:600px;margin:0 auto}
+.guarantee p{font-size:0.85rem;color:var(--text-muted);line-height:1.7}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);border-top:1px solid var(--border-subtle);padding:0.6rem 1.2rem;display:flex;justify-content:space-between;align-items:center;z-index:100;padding-bottom:calc(0.6rem + env(safe-area-inset-bottom,0px))}
+.sticky-cta .sticky-price{font-family:var(--serif);font-size:1.1rem}
+.sticky-cta .cta{padding:0.6rem 1.4rem;font-size:0.7rem;min-height:44px}
+.footer{text-align:center;padding:2rem;font-size:0.75rem;color:var(--text-muted)}
+@media(max-width:768px){
+.hero{padding:1.6rem 1.25rem 2.5rem}
+.hero h1{font-size:2.1rem}
+.hero-image-zone{max-width:320px;margin-bottom:1.4rem}
+section{padding:2.4rem 1.25rem}
+.section-title{font-size:1.6rem}
+.proof-bar{padding:1.2rem 1.25rem;gap:1rem}
+.proof-item{flex:0 0 calc(50% - 1rem)}
+.shape-grid,.pack-grid,.bundle-grid{grid-template-columns:1fr}
+.testimonial-grid{grid-template-columns:1fr}
+.trust-pill{font-size:0.7rem;padding:0.5rem 0.9rem;min-height:44px;display:inline-flex;align-items:center}
+.sticky-cta{padding:0.55rem 0.9rem}
+.sticky-cta .cta{padding:0.7rem 1.6rem;font-size:0.78rem}
+.cta{display:block;width:100%;text-align:center}
+}
+</style>
+</head>
+<body>
+<!-- HERO -->
+<div class="hero">
+<p class="section-label">Hand-Blown Crystal</p>
+<h1>The glass that lets wine <span class="highlight">be wine</span></h1>
+<p class="hero-sub">Hand-blown, lead-free crystal from Singapore. Two universal silhouettes, from S$124 per 2-pack. Free worldwide shipping.</p>
+<div class="hero-image-zone">
+<img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/4f41f7de-eefd-4445-a0da-5c3d1efe4425" alt="kes-sho wine glasses arranged on a table">
+</div>
+<a href="#intro" class="cta">See Why It Matters</a>
+<div class="trust-row">
+<span class="trust-pill">Secure Checkout</span>
+<span class="trust-pill">Lead-Free Crystal</span>
+<span class="trust-pill">Free Worldwide Shipping</span>
+<span class="trust-pill">Replacement Guarantee</span>
+</div>
+</div>
+
+<!-- INTRO -->
+<section id="intro">
+<p class="section-label">The Glass</p>
+<h2 class="section-title">Why we made one glass you reach for first</h2>
+<p class="intro-text">Most people own too many glasses and reach for none of them. We designed one universal wine glass that handles everything from a Tuesday Riesling to a Saturday Barolo, so you stop overthinking and start drinking.</p>
+<ul class="intro-list">
+<li><strong>Hand-blown, not pressed.</strong> Thinner rim, no mould seams. The wine hits your palate, not the glass.</li>
+<li><strong>One shape, every style.</strong> A universal bowl tuned for reds, whites, roses, and natural wines alike.</li>
+<li><strong>Built for nightly use.</strong> Conceived by bartenders and sommeliers for hospitality service, not display cabinets.</li>
+</ul>
+</section>
+
+<!-- PROOF BAR -->
+<div class="proof-bar">
+<div class="proof-item"><div class="number">248+</div><div class="label">Sets in 177 Homes</div></div>
+<div class="proof-item"><div class="number">12</div><div class="label">Countries Shipped</div></div>
+<div class="proof-item"><div class="number">&lt;90g</div><div class="label">Lighter Than a Bar of Soap</div></div>
+<div class="proof-item"><div class="number">100%</div><div class="label">Lead-Free Crystal</div></div>
+</div>
+
+<!-- SHAPE SELECTION -->
+<section id="shapes">
+<p class="section-label">Your Preference</p>
+<h2 class="section-title">Choose your silhouette</h2>
+<p style="font-size:0.9rem;color:var(--text-muted);margin-top:0.5rem;line-height:1.7;max-width:640px">Both shapes are universal. The difference is how the bowl opens. Pick whichever appeals visually and ergonomically. You cannot get this wrong.</p>
+<div class="shape-grid">
+<div class="shape-card selected" data-shape="I" tabindex="0" role="button" aria-pressed="true">
+<span class="shape-pill">Selected</span>
+<div class="shape-name">Wine Glass I</div>
+<div class="shape-tagline">Tapered silhouette, classic elegance</div>
+<p class="shape-desc">Focuses aromatics upward and emphasises verticality in the pour. Ideal for lighter reds, whites, and anyone who prefers a more classic, tapered stem.</p>
+<img class="shape-img" src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/7f31d55f-d2ae-49b9-b6f0-31c2c05abfd2" alt="kes-sho Wine Glass I with tapered bowl">
+</div>
+<div class="shape-card" data-shape="II" tabindex="0" role="button" aria-pressed="false">
+<span class="shape-pill">Wine Glass</span>
+<div class="shape-name">Wine Glass II</div>
+<div class="shape-tagline">Wider bowl, more open aeration</div>
+<p class="shape-desc">Opens wine faster with more surface area. Great for fuller reds, natural wines, or anyone who wants maximum aeration and a bolder visual statement.</p>
+<img class="shape-img" src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/1fb89802-3355-4564-ad20-bbe9ca0d01bb" alt="kes-sho Wine Glass II with wider bowl">
+</div>
+</div>
+</section>
+
+<!-- PACKS -->
+<section id="packs">
+<p class="section-label">The Set</p>
+<h2 class="section-title">Choose your set size</h2>
+<div class="pack-grid">
+<div class="pack-card">
+<div class="pack-title">2-Pack</div>
+<div class="pack-sub">2 glasses. Your starting pair.</div>
+<div class="pack-price">S$124</div>
+<div class="pack-per">S$62 per glass</div>
+<a href="https://kes-sho.com/cart/42630060736677:1" class="cta pack-cta" data-type="2pack">Get My 2-Pack</a>
+<p class="micro-testimonial">&ldquo;The only glasses I reach for now.&rdquo;</p>
+</div>
+<div class="pack-card">
+<div class="pack-title">6-Pack</div>
+<div class="pack-sub">6 glasses. For the long table.</div>
+<div class="pack-price">S$372</div>
+<div class="pack-per">S$62 per glass</div>
+<a href="https://kes-sho.com/cart/42630060736677:3" class="cta pack-cta" data-type="6pack">Get My 6-Pack</a>
+</div>
+</div>
+</section>
+
+<!-- BUNDLES -->
+<section id="bundles">
+<p class="section-label">Complete the Table</p>
+<h2 class="section-title">Add champagne with Existential</h2>
+<p style="font-size:0.9rem;color:var(--text-muted);margin-top:0.5rem;line-height:1.7;max-width:640px">Existential is our champagne glass &mdash; same crystal, same hand-blown process, tapered for effervescence.</p>
+<div class="bundle-grid">
+<div class="bundle-card">
+<div class="bundle-title">Wine + Champagne &mdash; 2-Pack</div>
+<div class="bundle-desc">2 wine glasses + 2 Existential champagne glasses (4 glasses total)</div>
+<div class="bundle-price">S$204</div>
+<a href="https://kes-sho.com/cart/42630060736677:1,41951788859557:1" class="cta bundle-cta" data-type="bundle2">Add Wine + Champagne</a>
+</div>
+<div class="bundle-card">
+<div class="bundle-title">Wine + Champagne &mdash; 6-Pack</div>
+<div class="bundle-desc">6 wine glasses + 6 Existential champagne glasses (12 glasses total)</div>
+<div class="bundle-price">S$612</div>
+<a href="https://kes-sho.com/cart/42630060736677:3,41951788859557:3" class="cta bundle-cta" data-type="bundle6">Add Full Set</a>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+<p class="section-label">What People Say</p>
+<h2 class="section-title">First impressions</h2>
+<div class="testimonial-grid">
+<div class="testimonial-card">
+<p class="quote">&ldquo;The wine just opens up. I have had Zalto for years and thought I knew what a thin glass felt like. The kes-sho is different &mdash; almost unsettling how light it is.&rdquo;</p>
+<p class="attribution">Wine enthusiast, Singapore</p>
+</div>
+<div class="testimonial-card">
+<p class="quote">&ldquo;Bought the Wine + Champagne set for a housewarming and they texted me the same night. Said it was the best gift they had received.&rdquo;</p>
+<p class="attribution">Corporate gifter, Melbourne</p>
+</div>
+<div class="testimonial-card">
+<p class="quote">&ldquo;I was sceptical that a glass could change the experience. My partner insisted. She was right. After picking one up, your other glasses feel wrong.&rdquo;</p>
+<p class="attribution">Converted sceptic, Hong Kong</p>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section>
+<p class="section-label">Questions</p>
+<h2 class="section-title">Before you decide</h2>
+<div class="faq-list">
+<div class="faq-item">
+<button class="faq-q">Which shape suits which wine style?<span class="faq-toggle">+</span></button>
+<div class="faq-a">Both shapes are universal. Shape I focuses aromatics upward and is elegant with lighter wines. Shape II opens the wine wider and suits fuller reds and natural wines. Neither is wrong for any style.</div>
+</div>
+<div class="faq-item">
+<button class="faq-q">Are they fragile?<span class="faq-toggle">+</span></button>
+<div class="faq-a">They are thin and light, but hand-blown crystal has no stress points from moulds, making it more resilient than you would expect. We ship in protective packaging and replace anything that arrives broken.</div>
+</div>
+<div class="faq-item">
+<button class="faq-q">Is this a good gift?<span class="faq-toggle">+</span></button>
+<div class="faq-a">Our Wine + Champagne bundle is our most gifted set. Hand-blown crystal in a premium box makes an immediate impression at housewarmings, weddings, and milestones.</div>
+</div>
+<div class="faq-item">
+<button class="faq-q">Can I put them in the dishwasher?<span class="faq-toggle">+</span></button>
+<div class="faq-a">Yes, on a gentle cycle. Most of our hospitality clients hand-wash for longevity, but the crystal handles a dishwasher fine.</div>
+</div>
+<div class="faq-item">
+<button class="faq-q">Where do you ship and how long does it take?<span class="faq-toggle">+</span></button>
+<div class="faq-a">We ship worldwide for free. Singapore orders arrive in 3 to 5 days. International orders typically take 7 to 14 days. Each set is hand-blown to order.</div>
+</div>
+</div>
+</section>
+
+<!-- GUARANTEE -->
+<div class="guarantee">
+<p><strong>Our promise:</strong> Every set ships in protective packaging. If anything arrives broken, we replace it. No forms, no hassle &mdash; just send us a photo.</p>
+</div>
+
+<!-- FINAL CTA -->
+<div class="final-cta">
+<p class="section-label">Ready?</p>
+<h2 class="section-title" style="margin-bottom:1.2rem">Get your set</h2>
+<a href="#packs" class="cta">Choose My Set</a>
+</div>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta">
+<span class="sticky-price">From S$124</span>
+<a href="#packs" class="cta">Get My Set</a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">&copy; 2025 kes-sho. Hand-blown in partnership with master glassblowers.</div>
+
+<script>
+// Shape switching
+const variants = {
+I: { id: '42630060736677' },
+II: { id: '44929411121317' }
+};
+const existentialId = '41951788859557';
+let currentShape = 'I';
+
+function updateLinks() {
+const vid = variants[currentShape].id;
+document.querySelectorAll('.pack-cta').forEach(a => {
+const type = a.dataset.type;
+if (type === '2pack') a.href = 'https://kes-sho.com/cart/' + vid + ':1';
+if (type === '6pack') a.href = 'https://kes-sho.com/cart/' + vid + ':3';
+});
+document.querySelectorAll('.bundle-cta').forEach(a => {
+const type = a.dataset.type;
+if (type === 'bundle2') a.href = 'https://kes-sho.com/cart/' + vid + ':1,' + existentialId + ':1';
+if (type === 'bundle6') a.href = 'https://kes-sho.com/cart/' + vid + ':3,' + existentialId + ':3';
+});
+}
+
+document.querySelectorAll('.shape-card').forEach(card => {
+function select() {
+document.querySelectorAll('.shape-card').forEach(c => {
+c.classList.remove('selected');
+c.querySelector('.shape-pill').textContent = 'Wine Glass';
+c.setAttribute('aria-pressed', 'false');
+});
+card.classList.add('selected');
+card.querySelector('.shape-pill').textContent = 'Selected';
+card.setAttribute('aria-pressed', 'true');
+currentShape = card.dataset.shape;
+updateLinks();
+}
+card.addEventListener('click', select);
+card.addEventListener('keydown', e => {
+if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(); }
+});
+});
+
+// FAQ toggle
+document.querySelectorAll('.faq-q').forEach(q => {
+q.addEventListener('click', () => q.closest('.faq-item').classList.toggle('open'));
+});
+
+// UTM capture
+const params = new URLSearchParams(window.location.search);
+const utmKeys = ['utm_source','utm_medium','utm_campaign','fbclid','gclid'];
+const utmStr = utmKeys.filter(k => params.get(k)).map(k => k + '=' + params.get(k)).join('&');
+if (utmStr) {
+document.querySelectorAll('a.cta[href*="kes-sho.com"]').forEach(a => {
+a.href += (a.href.includes('?') ? '&' : '?') + utmStr;
+});
+}
+</script>
+</body>
+</html>
