@@ -141,7 +141,7 @@ src="https://www.facebook.com/tr?id=726281862980450&ev=PageView&noscript=1"
 
 <!-- A/B Test Variant Tracking -->
 <script>
-window.__AB_VARIANT = 'A';
+window.__AB_VARIANT = 'B';
 </script>
 
 </head>
@@ -224,7 +224,7 @@ window.__AB_VARIANT = 'A';
       <div class="pack-sub">2 glasses. Your starting pair.</div>
       <div class="pack-price">S$124</div>
       <div class="pack-per">S$62 per glass</div>
-      <a href="https://kes-sho.com/cart/42630060736677:1" class="cta pack-cta" data-type="2pack">Get My 2-Pack</a>
+      <a href="https://kes-sho.com/products/wine-glass-x-2" class="cta pack-cta" data-type="2pack">Get My 2-Pack</a>
       <p class="pack-microcopy" style="font-size:0.75rem;color:var(--text-muted);margin-top:0.8rem;line-height:1.5;">Every set ships in protective packaging. If anything arrives broken, we replace it—no forms, just send a photo.</p>
       <p class="pack-microcopy">Ships in 7–14 days · Free worldwide shipping</p>
       <p class="micro-testimonial">&ldquo;The only glasses I reach for now.&rdquo;</p>
@@ -234,7 +234,7 @@ window.__AB_VARIANT = 'A';
       <div class="pack-sub">6 glasses. For the long table.</div>
       <div class="pack-price">S$372</div>
       <div class="pack-per">S$62 per glass</div>
-      <a href="https://kes-sho.com/cart/42630060736677:3" class="cta pack-cta" data-type="6pack">Get My 6-Pack</a>
+      <a href="https://kes-sho.com/products/wine-glass-x-2" class="cta pack-cta" data-type="6pack">Get My 6-Pack</a>
       <p class="pack-microcopy" style="font-size:0.75rem;color:var(--text-muted);margin-top:0.8rem;line-height:1.5;">Every set ships in protective packaging. If anything arrives broken, we replace it—no forms, just send a photo.</p>
       <p class="pack-microcopy">Ships in 7–14 days · Free worldwide shipping</p>
     </div>
@@ -325,24 +325,25 @@ window.__AB_VARIANT = 'A';
 
 <script>
 // Shape switching
+// VARIANT B: Links to product pages instead of pre-filled cart
 const variants = {
-  'I': { id: '42630060736677' },
-  'II': { id: '44929411121317' }
+  'I': { id: '42630060736677', productUrl: 'https://kes-sho.com/products/wine-glass-x-2' },
+  'II': { id: '44929411121317', productUrl: 'https://kes-sho.com/products/wine-glass-ii-x-2' }
 };
 const existentialId = '41951788859557';
 let currentShape = 'I';
 
 function updateLinks() {
-  const vid = variants[currentShape].id;
+  const productUrl = variants[currentShape].productUrl;
   document.querySelectorAll('.pack-cta').forEach(a => {
     const type = a.dataset.type;
-    if (type === '2pack') a.href = `https://kes-sho.com/cart/${vid}:1`;
-    if (type === '6pack') a.href = `https://kes-sho.com/cart/${vid}:3`;
+    if (type === '2pack') a.href = productUrl;
+    if (type === '6pack') a.href = productUrl;
   });
   document.querySelectorAll('.bundle-cta').forEach(a => {
     const type = a.dataset.type;
-    if (type === 'bundle2') a.href = `https://kes-sho.com/cart/${vid}:1,${existentialId}:1`;
-    if (type === 'bundle6') a.href = `https://kes-sho.com/cart/${vid}:3,${existentialId}:3`;
+    if (type === 'bundle2') a.href = productUrl;
+    if (type === 'bundle6') a.href = productUrl;
   });
 }
 
@@ -392,7 +393,7 @@ document.querySelectorAll('.pack-cta').forEach(a => {
   a.addEventListener('click', () => {
     if (typeof fbq === 'function') {
       fbq('trackCustom', 'CTAClick', {
-        variant: window.__AB_VARIANT || 'A',
+        variant: window.__AB_VARIANT || 'B',
         destination: a.href.includes('/cart/') ? 'cart' : 'product_page',
         pack: a.dataset.type,
         shape: currentShape
