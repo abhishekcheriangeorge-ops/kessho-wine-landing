@@ -216,9 +216,9 @@ src="https://www.facebook.com/tr?id=726281862980450&ev=PageView&noscript=1"
 <!-- PACKS -->
 <section id="packs">
   <p class="section-label">The Set</p>
-  <h2 class="section-title">Choose your set size</h2>
+  <h2 class="section-title">Get your pair</h2>
   <p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.5rem;line-height:1.7;max-width:640px"><span style="text-decoration:line-through;opacity:0.5">S$120/glass (Zalto)</span> &nbsp;→&nbsp; <strong style="color:var(--text-main)">S$62/glass (kes-shō)</strong></p>
-  <div class="pack-grid">
+  <div class="pack-grid" style="max-width:400px;margin-left:auto;margin-right:auto;margin-top:1.5rem;">
     <div class="pack-card">
       <div class="pack-title">2-Pack</div>
       <div class="pack-sub">2 glasses. Your starting pair.</div>
@@ -229,16 +229,6 @@ src="https://www.facebook.com/tr?id=726281862980450&ev=PageView&noscript=1"
       <p class="pack-microcopy batch-date">Hand-blown in limited batches. Current batch: <span class="current-batch"></span>. Ships in 7–14 days.</p>
       <p class="pack-microcopy">Free worldwide shipping</p>
       <p class="micro-testimonial">&ldquo;The only glasses I reach for now.&rdquo;</p>
-    </div>
-    <div class="pack-card">
-      <div class="pack-title">6-Pack</div>
-      <div class="pack-sub">6 glasses. For the long table.</div>
-      <div class="pack-price">S$372</div>
-      <div class="pack-per">S$62 per glass</div>
-      <a href="https://kes-sho.com/cart/42630060736677:3" class="cta pack-cta" data-type="6pack">Get My 6-Pack</a>
-      <p class="pack-microcopy" style="font-size:0.75rem;color:var(--text-muted);margin-top:0.8rem;line-height:1.5;">Every set ships in protective packaging. If anything arrives broken, we replace it—no forms, just send a photo.</p>
-      <p class="pack-microcopy batch-date">Hand-blown in limited batches. Current batch: <span class="current-batch"></span>. Ships in 7–14 days.</p>
-      <p class="pack-microcopy">Free worldwide shipping</p>
     </div>
   </div>
 </section>
@@ -283,7 +273,7 @@ src="https://www.facebook.com/tr?id=726281862980450&ev=PageView&noscript=1"
     </div>
     <div class="faq-item">
       <button class="faq-q">Is this a good gift?<span class="faq-toggle">+</span></button>
-      <div class="faq-a">The 6-pack is our most gifted set. Hand-blown crystal in a premium box makes an immediate impression at housewarmings, weddings, and milestones.</div>
+      <div class="faq-a">Absolutely. Hand-blown crystal in a premium box makes an immediate impression at housewarmings, weddings, and milestones. Larger sets are available on our main store.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q">Can I put them in the dishwasher?<span class="faq-toggle">+</span></button>
@@ -340,7 +330,6 @@ function updateLinks() {
   document.querySelectorAll('.pack-cta').forEach(a => {
     const type = a.dataset.type;
     if (type === '2pack') a.href = `https://kes-sho.com/cart/${vid}:1`;
-    if (type === '6pack') a.href = `https://kes-sho.com/cart/${vid}:3`;
   });
   document.querySelectorAll('.bundle-cta').forEach(a => {
     const type = a.dataset.type;
