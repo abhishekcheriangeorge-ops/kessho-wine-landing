@@ -226,7 +226,7 @@ src="https://www.facebook.com/tr?id=726281862980450&ev=PageView&noscript=1"
       <div class="pack-per">S$62 per glass</div>
       <a href="https://kes-sho.com/cart/42630060736677:1" class="cta pack-cta" data-type="2pack">Get My 2-Pack</a>
       <p class="pack-microcopy" style="font-size:0.75rem;color:var(--text-muted);margin-top:0.8rem;line-height:1.5;">Every set ships in protective packaging. If anything arrives broken, we replace it—no forms, just send a photo.</p>
-      <p class="pack-microcopy">Hand-blown in limited batches. Current batch: March 2026. Ships in 7–14 days.</p>
+      <p class="pack-microcopy batch-date">Hand-blown in limited batches. Current batch: <span class="current-batch"></span>. Ships in 7–14 days.</p>
       <p class="pack-microcopy">Free worldwide shipping</p>
       <p class="micro-testimonial">&ldquo;The only glasses I reach for now.&rdquo;</p>
     </div>
@@ -237,7 +237,7 @@ src="https://www.facebook.com/tr?id=726281862980450&ev=PageView&noscript=1"
       <div class="pack-per">S$62 per glass</div>
       <a href="https://kes-sho.com/cart/42630060736677:3" class="cta pack-cta" data-type="6pack">Get My 6-Pack</a>
       <p class="pack-microcopy" style="font-size:0.75rem;color:var(--text-muted);margin-top:0.8rem;line-height:1.5;">Every set ships in protective packaging. If anything arrives broken, we replace it—no forms, just send a photo.</p>
-      <p class="pack-microcopy">Hand-blown in limited batches. Current batch: March 2026. Ships in 7–14 days.</p>
+      <p class="pack-microcopy batch-date">Hand-blown in limited batches. Current batch: <span class="current-batch"></span>. Ships in 7–14 days.</p>
       <p class="pack-microcopy">Free worldwide shipping</p>
     </div>
   </div>
@@ -389,6 +389,10 @@ if (utmStr) {
     a.href = a.href + (a.href.includes('?') ? '&' : '?') + utmStr;
   });
 }
+
+// Auto-fill current batch month
+const batchMonth = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+document.querySelectorAll('.current-batch').forEach(el => { el.textContent = batchMonth; });
 
 // A/B Test: Track CTA clicks with variant info via Meta Pixel
 document.querySelectorAll('.pack-cta').forEach(a => {
