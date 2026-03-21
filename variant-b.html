@@ -10,9 +10,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap">
 <style>
 :root {
---bg-main:#f8f6f3;--bg-panel:#ffffff;--bg-accent:#f1ebe3;
---text-main:#14110f;--text-muted:#7a7570;--gold:#c5a572;--gold-text:#9c7a45;
---border-subtle:rgba(0,0,0,0.06);--serif:'Cormorant Garamond',serif;--sans:'Inter',sans-serif;
+--bg-main:#f7f7f6;--bg-panel:#ffffff;--bg-accent:#ededed;
+--text-main:#1c1d1d;--text-muted:#6b6b6b;--gold:#1c1d1d;--gold-text:#1c1d1d;
+--border-subtle:rgba(0,0,0,0.08);--serif:'Cormorant Garamond',serif;--sans:'Inter',sans-serif;
 }
 *,*:before,*:after{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:var(--sans);background:var(--bg-main);color:var(--text-main);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:80px;}
@@ -21,44 +21,44 @@ body{font-family:var(--sans);background:var(--bg-main);color:var(--text-main);-w
 .logo-header{text-align:center;padding:1.5rem 2rem 0.5rem;background:var(--bg-main);}
 .logo-header img{height:50px;width:auto;}
 
-.section-label{font-family:var(--sans);font-size:0.75rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold-text);}
+.section-label{font-family:var(--sans);font-size:0.75rem;letter-spacing:0.25em;text-transform:uppercase;color:#6b6b6b;}
 .section-title{font-family:var(--serif);font-size:2.2rem;font-weight:300;line-height:1.15;margin-top:0.4rem;}
 section{padding:3.5rem 2rem;max-width:900px;margin:0 auto;}
 .cta{display:inline-block;padding:0.9rem 2.4rem;background:var(--gold);color:#fff;text-decoration:none;text-transform:uppercase;font-size:0.75rem;font-weight:600;letter-spacing:0.2em;border-radius:999px;border:none;cursor:pointer;transition:all .3s;min-height:54px;line-height:54px;line-height:normal;display:inline-flex;align-items:center;justify-content:center;}
-.cta:hover{background:var(--bg-panel);color:var(--gold-text);box-shadow:inset 0 0 0 1px var(--gold);}
+.cta:hover{background:var(--bg-panel);color:var(--text-main);box-shadow:inset 0 0 0 1px var(--text-main);}
 .cta:focus-visible{outline:2px solid var(--gold-text);outline-offset:4px;}
 .trust-row{display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 0.8rem;margin-top:1.2rem;}
 .trust-pill{font-size:0.75rem;color:var(--text-muted);border:1px solid var(--border-subtle);border-radius:999px;padding:0.3rem 0.85rem;background:rgba(0,0,0,0.02);}
 
 .hero{text-align:center;padding:3.5rem 2rem 2rem;max-width:900px;margin:0 auto;}
 .hero h1{font-family:var(--serif);font-size:2.8rem;font-weight:300;line-height:1.1;margin-bottom:0.6rem;}
-.hero .highlight{color:var(--gold);}
+.hero .highlight{font-style:italic;font-weight:400;}
 .hero-sub{font-size:0.95rem;color:var(--text-muted);max-width:540px;margin:0 auto 1.5rem;line-height:1.7;}
 .hero-learn-more{display:block;font-size:0.75rem;color:var(--text-muted);text-decoration:none;margin-top:0.8rem;letter-spacing:0.05em;transition:color .3s;}
-.hero-learn-more:hover{color:var(--gold-text);}
+.hero-learn-more:hover{color:var(--text-main);}
 .hero-image-zone{width:100%;max-width:640px;aspect-ratio:4/3;margin:0 auto 2rem;border-radius:18px;overflow:hidden;background:var(--bg-panel);border:1px solid var(--border-subtle);}
 .hero-image-zone img{width:100%;height:100%;object-fit:cover;}
 
 .intro-text{font-size:1rem;color:var(--text-muted);line-height:1.8;}
 .intro-list{list-style:none;}
 .intro-list li{padding:0.6rem 0;padding-left:1.6rem;position:relative;font-size:0.95rem;color:var(--text-main);line-height:1.6;}
-.intro-list li:before{content:'';position:absolute;left:0;top:1rem;width:6px;height:6px;background:var(--gold);border-radius:50%;}
+.intro-list li:before{content:'';position:absolute;left:0;top:1rem;width:6px;height:6px;background:var(--text-main);border-radius:50%;}
 
 .proof-bar{display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;padding:2rem;background:var(--bg-panel);border-top:1px solid var(--border-subtle);border-bottom:1px solid var(--border-subtle);}
 .proof-item{text-align:center;}
-.proof-item .number{font-family:var(--serif);font-size:1.5rem;color:var(--gold-text);font-weight:300;}
+.proof-item .number{font-family:var(--serif);font-size:1.5rem;color:var(--text-main);font-weight:300;}
 .proof-item .label{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-muted);margin-top:0.15rem;}
 
 .shape-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:1.5rem;}
 .shape-card{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:18px;padding:1.8rem;cursor:pointer;transition:all .3s;position:relative;}
-.shape-card:hover,.shape-card.selected{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold);}
+.shape-card:hover,.shape-card.selected{border-color:var(--text-main);box-shadow:0 0 0 1px var(--text-main);}
 .shape-card .shape-name{font-family:var(--serif);font-size:1.4rem;font-weight:400;margin-bottom:0.3rem;}
 .shape-card .shape-tagline{font-size:0.85rem;color:var(--text-muted);margin-bottom:0.6rem;}
 .shape-card .shape-desc{font-size:0.85rem;color:var(--text-muted);line-height:1.6;margin-bottom:1rem;}
-.shape-rec{font-size:0.78rem;color:var(--gold-text);font-style:italic;margin-bottom:0.5rem;}
+.shape-rec{font-size:0.78rem;color:var(--text-muted);font-style:italic;margin-bottom:0.5rem;}
 .shape-card .shape-img{width:100%;border-radius:12px;margin-top:0.8rem;aspect-ratio:4/3;object-fit:cover;}
 .shape-pill{display:inline-block;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;border-radius:999px;border:1px solid var(--border-subtle);color:var(--text-muted);margin-bottom:0.8rem;}
-.shape-card.selected .shape-pill{background:var(--gold);color:#fff;border-color:var(--gold);}
+.shape-card.selected .shape-pill{background:var(--text-main);color:#fff;border-color:var(--text-main);}
 
 .pack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:1.5rem;}
 .pack-card{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:18px;padding:1.8rem;text-align:center;}
@@ -84,7 +84,7 @@ section{padding:3.5rem 2rem;max-width:900px;margin:0 auto;}
 .faq-list{margin-top:1.5rem;}
 .faq-item{border-bottom:1px solid var(--border-subtle);padding:1rem 0;}
 .faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:0.95rem;font-weight:500;color:var(--text-main);padding-right:1rem;background:none;border:none;width:100%;text-align:left;font-family:var(--sans);min-height:54px;}
-.faq-q .faq-toggle{font-size:1.2rem;color:var(--gold-text);min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;}
+.faq-q .faq-toggle{font-size:1.2rem;color:var(--text-main);min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;}
 .faq-a{font-size:0.85rem;color:var(--text-muted);line-height:1.7;padding:0.5rem 0 0.5rem;display:none;}
 .faq-item.open .faq-a{display:block;}
 .faq-item.open .faq-toggle{transform:rotate(45deg);}
@@ -195,7 +195,7 @@ window.__AB_VARIANT = 'B';
   <p class="section-label">Your Preference</p>
   <h2 class="section-title">Choose your silhouette</h2>
   <p style="font-size:0.9rem;color:var(--text-muted);margin-top:0.5rem;line-height:1.7;max-width:640px">Both are universal—the difference is how aromatics travel. Shape I focuses the bouquet upward. Shape II opens the wine wider with more air contact. Not sure? Start with Shape I—it's our most popular and covers the widest range.</p>
-  <p style="font-size:0.85rem;color:var(--gold-text);margin-top:0.8rem;font-weight:500;" id="shape-confirm">Currently selected: Wine Glass I</p>
+  <p style="font-size:0.85rem;color:var(--text-main);margin-top:0.8rem;font-weight:500;" id="shape-confirm">Currently selected: Wine Glass I</p>
   <div class="shape-grid">
     <div class="shape-card selected" data-shape="I" tabindex="0" role="button" aria-pressed="true">
       <span class="shape-pill">Selected</span>
